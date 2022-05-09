@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    position:static;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.WebContainer{
+    width: 100%;
+    height: auto;
+}
+.articles{
+    width:90%; /*Takes 90% width from WebContainer*/
+    height: auto;
+    margin: auto;
+} 
+div#uppanel{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    font-size: 23;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    height: 70px;
+    background-color: #242582;
+    margin-top: 0;
+    margin-bottom: 0;
+    float: none;
+    color: white;
+}
+div#leftpanel{
+    background-color: #2f2fa2;
+    width: 33%; 
+    height: 850px; 
+    text-align: center;
+    order: 1;
+    color: white;
+}
+div#leftpanel h3{
+    padding: -2px;
+    margin: 0;
+}
+div#centerpanel{
+    background-color: #99738e;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    color: white;
+    font-size: larger;
+}
+div#middle{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+div#rightpanel{
+    background-color: #2f2fa2;
+    width: 34%;
+    height: 850px;
+    text-align: center;
+    order: 3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+}
+div#miejsce_na_jpgi{
+    max-height: 50%;
+}
+.newSection ul {
+    list-style-type: none;
+    margin: auto;
+}
+ul#ul_pełen_pszczol{
+    margin: 0;
+    padding: 0;
+}
+li#listTrigger{
+    color: white;
+    text-align: center;
+    background-color: #553d67;
+    display: flex;
+    box-shadow: 2px 2px 1em black;
+    width: 33%;
+    margin: auto;
+    padding: 0.5em 2em 0.5em 4em;
+}
+li#lista li{
+    list-style-type: none;
+    margin: 2px auto 2px auto;
+    text-align: center;
+}
+li img {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    height: 30px;
+    width: 30px;
+}
+div#buttony{
+    display: flex;
+    margin-top: 80%;
+}
+.przyciski{
+    text-decoration: none;
+    background-color: #99738e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+div#koniec{
+text-align: center;
+    color: white;
+    height: 150px;
+    width: 100%;
+    background-color: #553d67;
+    order: 2; 
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    justify-content: center;
+}
+
+div#bottompanel{
+    background-color: #242582;
+    position: fixed;
+    padding: 0%;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    float: none;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    margin-top: 10px;
+    /*border: 2px solid black  */
+}
+button.wyslij{
+    order: 2;
+    display: flex;
+    margin-left: 39%;
+
+}
+div#bottompanel footer{
+    margin-top: 5px;
+}
+button#kupione{
+    float: down;
+}
+button {
+    background-color: #99738e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#zatwierdz{
+    order: 1;
+}
+.wyslij{
+    display: flex;
+}
+.c1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.centralny{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    width: 33%;
+    height: 100%;
+}
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <html lang="pl">
+    <head>
+    <meta charset="UTF-8">
+    <title>Aplikacja przyprawowa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+    <link rel="icon" href="icons/icon.svg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id = uppanel>
+            <h2>Aplikacja przyprawowa</h2>
+        </div>
+        <div id = mid class="c1">
+            <div id = leftpanel>
+               <h2>Stany magazynowe:</h2>
+               <h3 class="oregano" onmouseover="SetNewImage1()" onmouseout="DisableImage()">Oregano</h3>
+               <h3 class="bazylia" onmouseover="SetNewImage2()" onmouseout="DisableImage()">Bazylia</h3>
+               <h3 class="rozmaryn" onmouseover="SetNewImage3()" onmouseout="DisableImage()">Rozmaryn</h3>
+               <h3 class="paprykaw" onmouseover="SetNewImage4()" onmouseout="DisableImage()">Papryka wędzona</h3>
+               <h3 class="kumin" onmouseover="SetNewImage5()" onmouseout="DisableImage()">Kumin</h3>
+               <h3 class="gram_masala" onmouseover="SetNewImage6()" onmouseout="DisableImage()">Gram masala</h3>
+               <h3 class="imbir" onmouseover="SetNewImage7()" onmouseout="DisableImage()">Imbir</h3>
+               <h3 class="paprykas" onmouseover="SetNewImage8()" onmouseout="DisableImage()">Papryka słodka</h3>
+               <h3 class="kardamon" onmouseover="SetNewImage9()" onmouseout="DisableImage()">Kardamon</h3>
+               <h3 class="cynamon" onmouseover="SetNewImage10()" onmouseout="DisableImage()">Cynamon</h3>
+               <h3 class="pieprz_cayenne" onmouseover="SetNewImage11()" onmouseout="DisableImage()">Pieprz cayenne</h3>
+               <h3 class="sol_morska" onmouseover="SetNewImage12()" onmouseout="DisableImage()">Sól morska</h3>
+               <div id="miejsce_na_jpgi">
+                <img id="jpgi" width="300" src="./photos/tlo_zdj.png" alt="./photos/error.gif"> 
+               </div>
+            </div>
+        <div class="centralny">
+            <div id = centerpanel>
+                <h2>Wyczerpałem/am:</h2>
+                <p id="p1"><input type="checkbox" class="oregano" id="ch1"> Oregano </p>
+                <p id="p2"><input type="checkbox" class="bazylia" id="ch2"> Bazylia </p>
+                <p id="p3"><input type="checkbox" class="rozmaryn" id="ch3"> Rozmaryn </p>
+                <p id="p4"><input type="checkbox" class="paprykaw" id="ch4"> Papryka wędzona </p>
+                <p id="p5"><input type="checkbox" class="kumin" id="ch5"> Kumin </p>
+                <p id="p6"><input type="checkbox" class="gram_masala" id="ch6"> Gram masala </p>
+                <p id="p7"><input type="checkbox" class="imbir" id="ch7"> Imbir</p>
+                <p id="p8"><input type="checkbox" class="paprykas" id="ch8"> Papryka słodka</p>
+                <p id="p9"><input type="checkbox" class="kardamon" id="ch9"> Kardamon</p>
+                <p id="p10"><input type="checkbox" class="cynamon" id="ch10"> Cynamon</p>
+                <p id="p11"><input type="checkbox" class="pieprz_cayenne" id="ch11"> Pieprz cayene</p>
+                <p id="p12"><input type="checkbox" class="sol_morska" id="ch12"> Sól morska</p>
+            </div>
+            <div id = koniec>
+                <br><br>
+                <button class = "wyslij" onclick="ChangeStocks()">Zatwierdź</button> 
+            </div>
+        </div>
+            <div id = rightpanel>
+                <h2>Wprowadź nowo zakupione przyprawy</h2>
+                <div id="list"></div>
+                <ul id="ul_pełen_pszczol">
+                    <li id="listTrigger">Rozwiń listę</li>
+                        <li id="lista" class="newSection" style="list-style-type: none;">
+                            <ul>
+                                <li>
+                                    <p class="element" id="el1"><input type="checkbox" id="oregano"> Oregano </p>
+                                    <p class="element" id="el2"><input type="checkbox" id="bazylia"> Bazylia </p>
+                                    <p class="element" id="el3"><input type="checkbox" id="rozmaryn"> Rozmaryn </p>
+                                    <p class="element" id="el4"><input type="checkbox" id="paprykaw"> Papryka wędzona </p>
+                                    <p class="element" id="el5"><input type="checkbox" id="kumin"> Kumin </p>
+                                    <p class="element" id="el6"><input type="checkbox" id="gram_masala"> Gram masala </p>
+                                    <p class="element" id="el7"><input type="checkbox" id="imbir"> Imbir</p>
+                                    <p class="element" id="el8"><input type="checkbox" id="paprykas"> Papryka słodka</p>
+                                    <p class="element" id="el9"><input type="checkbox" id="kardamon">Kardamon</p>
+                                    <p class="element" id="el10"><input type="checkbox" id="cynamon"> Cynamon</p>
+                                    <p class="element" id="el11"><input type="checkbox" id="pieprz_cayenne"> Pieprz cayene</p>
+                                    <p class="element" id="el12"><input type="checkbox" id="sol_morska"> Sól morska</p>
+                                </li>
+                            </ul>
+                        </li>
+                </ul>
+                    <div id="buttony_kurde">
+                        <a href="kontakt.html" class ="przyciski">Kontakt</a>
+                        <a href="losowa_strona.html" class ="przyciski">coś jeszcze</a>
+                        <a href="kolejna_losowa_strona.html" class ="przyciski">i jeszcze coś</a>
+                        <a href="zglaszanie_bledow.html" class ="przyciski">Zgłaszanie problemów</a>
+                    </div>
+                </div>
+            </div> 
+        <div id = bottompanel>
+            <footer>Projekt inz 2022, Mateusz Szczepański</footer>
+        </div>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script> 
+    </body>
+</html>
